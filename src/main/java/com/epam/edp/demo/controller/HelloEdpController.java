@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloEdpController {
 
+    String hostname = System.getenv("HOSTNAME");
+
     @GetMapping(value = "/api/hello")
     public String hello() {
-        return "Hello, EDP!";
+        return "Hello, KubeRocketCI from " + hostname;
     }
 }
