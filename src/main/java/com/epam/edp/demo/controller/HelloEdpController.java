@@ -13,6 +13,6 @@ public class HelloEdpController {
 
     @GetMapping(value = "/api/hello")
     public String hello() {
-        return "Hello, KubeRocketCI from " + hostname;
+        return "Hello, KubeRocketCI v2 from " + hostname;
     }
 }
